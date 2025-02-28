@@ -1,10 +1,9 @@
 // this scraper is deprecated, but I'm keeping it here for reference
 import FireCrawlApp from '@mendable/firecrawl-js';
 import { z } from 'zod';
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-
-// dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env.local" });
 
 const app = new FireCrawlApp({apiKey: process.env.FIRECRAWL_API_KEY as string});
 

@@ -1,4 +1,3 @@
-// 'use server';
 import { askAssistant } from '@/lib/real-estate-agent';
 import { NextResponse } from 'next/server';
 

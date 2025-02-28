@@ -1,9 +1,8 @@
-// 'use server';
 import { cosineDistance, asc, sql} from "drizzle-orm";
 import { generateEmbedding } from "./generate-embedding";
 import { db } from "./db";
 import { listings, listingHistory } from "./db/schema";
-import { SearchParams } from "./types";
+import { SearchParams } from "./tools";
 
 process.removeAllListeners('warning');
 

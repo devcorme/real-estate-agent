@@ -1,10 +1,9 @@
-// 'use server';
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 import OpenAI from "openai";
 import { SYSTEM_PROMPT, ListingsResponseSchema } from "./prompt-schema";
 import { mainTools, findBestOffer, analyzeListing } from "./tools";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
-// dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env.local" });
 
 process.removeAllListeners("warning");
 
